@@ -1,4 +1,4 @@
-package ar.edu.unju.fi.POO2025.Tp1.Tp2.punto1;
+package ar.edu.unju.fi.POO2025.Tp2.punto1;
 import java.util.Scanner;
 
 public class Main {
