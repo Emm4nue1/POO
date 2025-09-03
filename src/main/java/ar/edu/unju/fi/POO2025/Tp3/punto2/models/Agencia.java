@@ -1,8 +1,6 @@
-package ar.edu.unju.fi.POO2025.Tp3.punto2.model;
-
-import ar.edu.unju.fi.POO2025.Tp3.punto2.model.cars.Vehiculo;
-import ar.edu.unju.fi.POO2025.Tp3.punto2.model.manager.ManagerResponsable;
-
+package ar.edu.unju.fi.POO2025.Tp3.punto2.models;
+import ar.edu.unju.fi.POO2025.Tp3.punto2.models.cars.Vehiculo;
+import ar.edu.unju.fi.POO2025.Tp3.punto2.models.manager.ManagerResponsable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,7 +42,6 @@ public class Agencia {
     public double getTotalAcumulado() {
         return totalAcumulado;
     }
-
     public ManagerResponsable getManagerResponsable() {
         return managerResponsable;
     }

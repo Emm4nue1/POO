@@ -17,13 +17,11 @@ public class MainEcommerce {
         CarritoDeCompras carritoTemporal = new CarritoDeCompras(usuarioTemp);
         CarritoDeCompras carritoPermanente = new CarritoDeCompras(usuarioPerm);
 
-        System.out.println("=== DEMOSTRACIÓN DEL SISTEMA ECOMMERCE ===");
-
         // Mostrar productos disponibles
         manager.mostrarProductos();
 
         // Operaciones con usuario temporal
-        System.out.println("\n=== OPERACIONES CON USUARIO TEMPORAL ===");
+        System.out.println("\nOPERACIONES CON USUARIO TEMPORAL");
         carritoTemporal.agregarProducto(manager.buscarProductoPorSku("P001"), 1);
         carritoTemporal.agregarProducto(manager.buscarProductoPorSku("P002"), 2);
         carritoTemporal.agregarProducto(manager.buscarProductoPorSku("P003"), 1);
@@ -41,16 +39,14 @@ public class MainEcommerce {
         carritoTemporal.mostrarCarrito();
 
         // Operaciones con usuario permanente
-        System.out.println("\n=== OPERACIONES CON USUARIO PERMANENTE ===");
+        System.out.println("\nOPERACIONES CON USUARIO PERMANENTE");
         carritoPermanente.agregarProducto(manager.buscarProductoPorSku("P001"), 1);
         carritoPermanente.agregarProducto(manager.buscarProductoPorSku("P003"), 1);
         carritoPermanente.agregarProducto(manager.buscarProductoPorSku("P005"), 2);
         carritoPermanente.mostrarCarrito();
 
         // Intentar agregar producto inactivo
-        System.out.println("\n=== PRUEBA CON PRODUCTO INACTIVO ===");
+        System.out.println("\nPRODUCTO INACTIVO");
         carritoTemporal.agregarProducto(manager.buscarProductoPorSku("P004"), 1);
-
-        System.out.println("\n=== FIN DE LA DEMOSTRACIÓN ===");
     }
 }

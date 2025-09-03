@@ -1,5 +1,5 @@
-package ar.edu.unju.fi.POO2025.Tp3.punto2.model.cars;
-import ar.edu.unju.fi.POO2025.Tp3.punto2.model.Responsable;
+package ar.edu.unju.fi.POO2025.Tp3.punto2.models.cars;
+import ar.edu.unju.fi.POO2025.Tp3.punto2.models.Responsable;
 
 public abstract class Vehiculo {
     protected String matricula;

@@ -1,4 +1,4 @@
-package ar.edu.unju.fi.POO2025.Tp3.punto2.model.cars;
+package ar.edu.unju.fi.POO2025.Tp3.punto2.models.cars;
 
 public class Camion extends Vehiculo {
     private final double precioKm;

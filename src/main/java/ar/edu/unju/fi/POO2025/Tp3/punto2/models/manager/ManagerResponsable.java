@@ -1,7 +1,5 @@
-package ar.edu.unju.fi.POO2025.Tp3.punto2.model.manager;
-
-import ar.edu.unju.fi.POO2025.Tp3.punto2.model.Responsable;
-
+package ar.edu.unju.fi.POO2025.Tp3.punto2.models.manager;
+import ar.edu.unju.fi.POO2025.Tp3.punto2.models.Responsable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,7 +12,6 @@ public class ManagerResponsable {
     }
 
     private void inicializarResponsables() {
-        // 5 responsables iniciales
         agregarResponsable("12345678", "Juan Perez");
         agregarResponsable("23456789", "Maria Gonzalez");
         agregarResponsable("34567890", "Carlos Rodriguez");

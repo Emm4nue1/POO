@@ -1,4 +1,4 @@
-package ar.edu.unju.fi.POO2025.Tp3.punto2.model;
+package ar.edu.unju.fi.POO2025.Tp3.punto2.models;
 
 public class Responsable {
     private String documento;

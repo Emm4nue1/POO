@@ -1,21 +1,17 @@
 package ar.edu.unju.fi.POO2025.Tp3.punto2;
-
-import ar.edu.unju.fi.POO2025.Tp3.punto2.model.Agencia;
-import ar.edu.unju.fi.POO2025.Tp3.punto2.model.Responsable;
-import ar.edu.unju.fi.POO2025.Tp3.punto2.model.cars.Camion;
-import ar.edu.unju.fi.POO2025.Tp3.punto2.model.cars.Tractor;
-
+import ar.edu.unju.fi.POO2025.Tp3.punto2.models.Agencia;
+import ar.edu.unju.fi.POO2025.Tp3.punto2.models.Responsable;
+import ar.edu.unju.fi.POO2025.Tp3.punto2.models.cars.Camion;
+import ar.edu.unju.fi.POO2025.Tp3.punto2.models.cars.Tractor;
 import java.time.LocalDate;
 
 public class MainAgencia {
     public static void main(String[] args) {
-        // i. Instanciar una agencia
         Agencia agencia = new Agencia();
 
         // ii. Registrar alquileres
-        // Crear vehículos
-        Camion camion1 = new Camion("MSR432", 34.29); // 1200 / 35 = ~34.29
-        Tractor tractor1 = new Tractor("TDSS40", 520); // 2600 / 5 = 520
+        Camion camion1 = new Camion("MSR432", 34.29);
+        Tractor tractor1 = new Tractor("TDSS40", 520);
 
         agencia.agregarVehiculo(camion1);
         agencia.agregarVehiculo(tractor1);

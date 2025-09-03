@@ -1,9 +1,7 @@
 package ar.edu.unju.fi.POO2025.Tp3.punto1.models.manager;
-
 import ar.edu.unju.fi.POO2025.Tp3.punto1.models.product.Producto;
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class ManagerProducto {
     private List<Producto> productos;
