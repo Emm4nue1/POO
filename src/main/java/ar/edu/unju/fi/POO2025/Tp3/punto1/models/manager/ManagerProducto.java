@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ManagerProducto {
-    private List<Producto> productos;
+    private final List<Producto> productos;
 
     public ManagerProducto() {
         this.productos = new ArrayList<>();
@@ -26,7 +26,7 @@ public class ManagerProducto {
 
     public Producto buscarProductoPorSku(String sku) {
         for (Producto producto : productos) {
-            if (producto.getSku().equals(sku)) {
+            if (producto.sku().equals(sku)) {
                 return producto;
             }
         }
@@ -36,7 +36,7 @@ public class ManagerProducto {
     public void mostrarProductos() {
         System.out.println("\n--- Lista de Productos ---");
         for (Producto producto : productos) {
-            if (producto.isActivo()) {
+            if (producto.activo()) {
                 System.out.println(producto);
             }
         }

@@ -6,17 +6,17 @@ public class ItemCarrito {
 
     public ItemCarrito(Producto producto, int cantidad) {
         this.producto = producto;
-        this.subTotal = producto.getPrecio() * cantidad;
+        this.subTotal = producto.precio() * cantidad;
     }
 
     public Producto getProducto() { return producto; }
     public double getSubTotal() { return subTotal; }
     public void actualizarSubTotal(int cantidad) {
-        this.subTotal = producto.getPrecio() * cantidad;
+        this.subTotal = producto.precio() * cantidad;
     }
 
     @Override
     public String toString() {
-        return "ItemCarrito{producto=" + producto.getNombre() + ", subTotal=" + subTotal + "}";
+        return "ItemCarrito{producto=" + producto.nombre() + ", subTotal=" + subTotal + "}";
     }
 }

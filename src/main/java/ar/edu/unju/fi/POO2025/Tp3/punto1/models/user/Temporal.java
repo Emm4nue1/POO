@@ -19,7 +19,7 @@ public class Temporal extends Usuario {
 
     @Override
     public void agregarAlCarrito(Producto producto, int cantidad) {
-        System.out.println("Usuario temporal agregando producto: " + producto.getNombre());
+        System.out.println("Usuario temporal agregando producto: " + producto.nombre());
     }
 
     @Override

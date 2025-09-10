@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Agencia {
-    private List<Vehiculo> vehiculos;
+    private final List<Vehiculo> vehiculos;
     private double totalAcumulado;
     private final ManagerResponsable managerResponsable;
 
@@ -33,7 +33,7 @@ public class Agencia {
         if (vehiculo != null && vehiculo.isAlquilado()) {
             double importe = vehiculo.devolver();
             totalAcumulado += importe;
-            System.out.println(vehiculo.toString());
+            System.out.println(vehiculo);
             return importe;
         }
         return 0;

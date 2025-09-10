@@ -19,7 +19,7 @@ public class Permanente extends Usuario {
 
     @Override
     public void agregarAlCarrito(Producto producto, int cantidad) {
-        System.out.println("Usuario permanente agregando producto: " + producto.getNombre());
+        System.out.println("Usuario permanente agregando producto: " + producto.nombre());
     }
 
     @Override

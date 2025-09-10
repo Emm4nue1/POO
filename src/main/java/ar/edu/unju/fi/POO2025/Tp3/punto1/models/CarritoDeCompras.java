@@ -15,8 +15,8 @@ public class CarritoDeCompras {
     }
 
     public void agregarProducto(Producto producto, int cantidad) {
-        if (!producto.isActivo()) {
-            System.out.println("El producto " + producto.getNombre() + " no está activo.");
+        if (!producto.activo()) {
+            System.out.println("El producto " + producto.nombre() + " no está activo.");
             return;
         }
 
@@ -32,7 +32,7 @@ public class CarritoDeCompras {
 
     private ItemCarrito buscarItem(Producto producto) {
         for (ItemCarrito item : items) {
-            if (item.getProducto().getSku().equals(producto.getSku())) {
+            if (item.getProducto().sku().equals(producto.sku())) {
                 return item;
             }
         }
@@ -43,9 +43,9 @@ public class CarritoDeCompras {
         ItemCarrito itemARemover = buscarItem(producto);
         if (itemARemover != null) {
             items.remove(itemARemover);
-            System.out.println("Producto " + producto.getNombre() + " removido del carrito.");
+            System.out.println("Producto " + producto.nombre() + " removido del carrito.");
         } else {
-            System.out.println("Producto " + producto.getNombre() + " no encontrado en el carrito.");
+            System.out.println("Producto " + producto.nombre() + " no encontrado en el carrito.");
         }
     }
 

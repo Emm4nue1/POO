@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ManagerResponsable {
-    private Map<String, Responsable> responsables;
+    private final Map<String, Responsable> responsables;
 
     public ManagerResponsable() {
         responsables = new HashMap<>();
